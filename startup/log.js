@@ -1,35 +1,43 @@
 require("winston-mongodb");
 const winston = require("winston");
-
-module.exports = () => {
+const logger = winston.createLogger({
+  transports: [
+    new winston.transports.Console({ colorize: true, prettyPrint: true }),
+    new winston.transports.File({ filename: "logger.log" }),
+    new winston.transports.MongoDB({
+      db: "mongodb://localhost:27017/yqg",
+      options: {
+        useUnifiedTopology: true,
+      },
+    }),
+  ],
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.prettyPrint()
+  ),
+});
+const log = () => {
   process.on("uncaughtException", (error) => {
-    winston.error(error.message, error);
+    logger.log({
+      level: "error",
+      message: error,
+    });
     setTimeout(() => {
       process.exit(1);
     }, 1000);
   });
   process.on("unhandledRejection", (error) => {
-    winston.error(error.message, error);
+    logger.log({
+      level: "error",
+      message: error,
+    });
     setTimeout(() => {
       process.exit(1);
     }, 1000);
   });
-  winston.configure({
-    transports: [
-      new winston.transports.Console(),
-      new winston.transports.File({
-        name: "info-file",
-        filename: "filelog-info.log",
-        level: "info",
-      }),
-      new winston.transports.File({
-        name: "error-file",
-        filename: "filelog-error.log",
-        level: "error",
-      }),
-    ],
-  });
-  winston.add(winston.transports.MongoDB, {
-    db: "mongodb://localhost:27017/yqg",
-  });
+};
+
+module.exports = {
+  logger,
+  log,
 };
