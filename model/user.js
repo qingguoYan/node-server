@@ -5,7 +5,7 @@ const Joi = require("joi");
 
 const scheme = new mongoose.Schema({
   username: { type: String, required: true, minlength: 5, maxlength: 50 },
-  password: { type: String, required: true, minlength: 6, maxlength: 1024 },
+  password: { type: String, required: true, minlength: 5, maxlength: 1024 },
   email: {
     type: String,
     required: true,

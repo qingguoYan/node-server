@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const users = require("../router/users");
 const auth = require("../router/auth");
 const home = require("../router/home");
+const editor = require("../router/editor");
 const error = require("../middleware/error");
 const logger = morgan("tiny");
 
@@ -13,6 +14,7 @@ module.exports = (app) => {
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Headers", "Content-Type,x-auth-token");
     res.header("Access-Control-Expose-Headers", "*");
+    res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
     next();
   });
   app.use(cookieParser());
@@ -22,5 +24,6 @@ module.exports = (app) => {
   app.use("/api/users", users);
   app.use("/api/auth", auth);
   app.use("/api/home", home);
+  app.use("/api/editor", editor);
   app.use(error);
 };

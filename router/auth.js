@@ -4,6 +4,7 @@ const Joi = require("joi");
 const { User } = require("../model/user");
 const auth = require("../middleware/auth");
 const asyncMiddleware = require("../middleware/async");
+
 const router = express.Router();
 
 const validate = (user) => {

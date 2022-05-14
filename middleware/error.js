@@ -4,5 +4,5 @@ module.exports = (error, req, res, next) => {
     level: "error",
     message: error,
   });
-  res.status(500).send("service failed");
+  res.status(500).send(error);
 };

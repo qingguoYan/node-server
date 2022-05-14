@@ -1,0 +1,267 @@
+{
+  level: 'error',
+  message: ReferenceError: success is not defined
+      at D:\demo\node-demo\router\editor.js:9:22
+      at D:\demo\node-demo\middleware\async.js:4:13
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22
+      at Function.process_params (D:\demo\node-demo\node_modules\express\lib\router\index.js:341:12)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\index.js:275:10)
+      at Function.handle (D:\demo\node-demo\node_modules\express\lib\router\index.js:174:3),
+  timestamp: '2022-04-26T10:52:03.103Z'
+}
+{
+  level: 'error',
+  message: ReferenceError: success is not defined
+      at D:\demo\node-demo\router\editor.js:9:22
+      at D:\demo\node-demo\middleware\async.js:4:13
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22
+      at Function.process_params (D:\demo\node-demo\node_modules\express\lib\router\index.js:341:12)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\index.js:275:10)
+      at Function.handle (D:\demo\node-demo\node_modules\express\lib\router\index.js:174:3),
+  timestamp: '2022-04-26T10:52:12.919Z'
+}
+{
+  level: 'error',
+  message: TypeError: Editor is not a constructor
+      at D:\demo\node-demo\router\editor.js:12:20
+      at D:\demo\node-demo\middleware\async.js:4:13
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at module.exports (D:\demo\node-demo\middleware\auth.js:12:5)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22,
+  timestamp: '2022-04-26T11:31:29.069Z'
+}
+{
+  level: 'error',
+  message: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+      at NativeConnection.Connection.openUri (D:\demo\node-demo\node_modules\mongoose\lib\connection.js:807:32)
+      at D:\demo\node-demo\node_modules\mongoose\lib\index.js:340:10
+      at D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at Mongoose._promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\index.js:1174:10)
+      at Mongoose.connect (D:\demo\node-demo\node_modules\mongoose\lib\index.js:339:20)
+      at module.exports (D:\demo\node-demo\startup\db.js:4:12)
+      at Object.<anonymous> (D:\demo\node-demo\app.js:7:24)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14) {
+    reason: TopologyDescription {
+      type: 'Unknown',
+      servers: Map(1) {
+        'localhost:27017' => ServerDescription {
+          _hostAddress: new HostAddress('localhost:27017'),
+          address: 'localhost:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 158900293,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+              at connectionFailureError (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:381:20)
+              at Socket.<anonymous> (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:301:22)
+              at Object.onceWrapper (node:events:646:26)
+              at Socket.emit (node:events:526:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21)
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      logicalSessionTimeoutMinutes: undefined
+    }
+  },
+  timestamp: '2022-04-27T16:08:39.054Z'
+}
+{
+  level: 'error',
+  message: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+      at NativeConnection.Connection.openUri (D:\demo\node-demo\node_modules\mongoose\lib\connection.js:807:32)
+      at D:\demo\node-demo\node_modules\mongoose\lib\index.js:340:10
+      at D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+      at new Promise (<anonymous>)
+      at promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+      at Mongoose._promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\index.js:1174:10)
+      at Mongoose.connect (D:\demo\node-demo\node_modules\mongoose\lib\index.js:339:20)
+      at module.exports (D:\demo\node-demo\startup\db.js:4:12)
+      at Object.<anonymous> (D:\demo\node-demo\app.js:7:24)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14) {
+    reason: TopologyDescription {
+      type: 'Unknown',
+      servers: Map(1) {
+        'localhost:27017' => ServerDescription {
+          _hostAddress: new HostAddress('localhost:27017'),
+          address: 'localhost:27017',
+          type: 'Unknown',
+          hosts: [],
+          passives: [],
+          arbiters: [],
+          tags: {},
+          minWireVersion: 0,
+          maxWireVersion: 0,
+          roundTripTime: -1,
+          lastUpdateTime: 188705404,
+          lastWriteDate: 0,
+          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+              at connectionFailureError (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:381:20)
+              at Socket.<anonymous> (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:301:22)
+              at Object.onceWrapper (node:events:646:26)
+              at Socket.emit (node:events:526:28)
+              at emitErrorNT (node:internal/streams/destroy:157:8)
+              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+              at processTicksAndRejections (node:internal/process/task_queues:83:21)
+        }
+      },
+      stale: false,
+      compatible: true,
+      heartbeatFrequencyMS: 10000,
+      localThresholdMS: 15,
+      logicalSessionTimeoutMinutes: undefined
+    }
+  },
+  timestamp: '2022-05-03T13:10:59.421Z'
+}
+{
+  level: 'error',
+  message: TypeError: editor.save is not a function
+      at D:\demo\node-demo\router\editor.js:26:18
+      at D:\demo\node-demo\middleware\async.js:4:13
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at module.exports (D:\demo\node-demo\middleware\auth.js:12:5)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
+      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
+      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
+      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22,
+  timestamp: '2022-05-04T02:19:25.051Z'
+}
+{
+  level: 'error',
+  message: Error: Editor validation failed: title: Path `title` is required.
+      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      title: ValidatorError: Path `title` is required.
+          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
+          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
+          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'Editor validation failed'
+  },
+  timestamp: '2022-05-04T02:24:14.382Z'
+}
+{
+  level: 'error',
+  message: Error: Editor validation failed: title: Path `title` is required.
+      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      title: ValidatorError: Path `title` is required.
+          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
+          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
+          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'Editor validation failed'
+  },
+  timestamp: '2022-05-04T02:24:57.900Z'
+}
+{
+  level: 'error',
+  message: Error: Editor validation failed: title: Path `title` is required.
+      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
+      at formatValue (node:internal/util/inspect:782:19)
+      at formatProperty (node:internal/util/inspect:1819:11)
+      at formatRaw (node:internal/util/inspect:1030:9)
+      at formatValue (node:internal/util/inspect:817:10)
+      at inspect (node:internal/util/inspect:347:10)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
+      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
+      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
+      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
+    errors: {
+      title: ValidatorError: Path `title` is required.
+          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
+          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
+          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
+          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+        properties: {
+          validator: [Function (anonymous)],
+          message: 'Path `title` is required.',
+          type: 'required',
+          path: 'title',
+          value: undefined
+        },
+        kind: 'required',
+        path: 'title',
+        value: undefined,
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true
+      }
+    },
+    _message: 'Editor validation failed'
+  },
+  timestamp: '2022-05-04T02:26:28.462Z'
+}
