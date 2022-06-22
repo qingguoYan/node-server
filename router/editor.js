@@ -8,8 +8,8 @@ router.post(
   "/save",
   auth,
   asyncMiddleware(async (req, res) => {
-    const { content, title } = req.body;
-    const editor = new Editor({ content, title });
+    const { content, title, time } = req.body;
+    const editor = new Editor({ content, title, time });
     await editor.save();
     res.send({ data: "success" });
   })
@@ -19,8 +19,8 @@ router.put(
   "/update",
   auth,
   asyncMiddleware(async (req, res) => {
-    const { id, content, title } = req.body;
-    await Editor.findByIdAndUpdate(id, { content, title });
+    const { id, content, title, time } = req.body;
+    await Editor.findByIdAndUpdate(id, { content, title, time });
     res.send({ data: "success" });
   })
 );

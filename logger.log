@@ -265,3 +265,29 @@
   },
   timestamp: '2022-05-04T02:26:28.462Z'
 }
+{
+  level: 'error',
+  message: Error: FATAL ERROR: environment jwtPrivateKey is not defined!
+      at module.exports (/Users/yanqingguo/Desktop/Demo/node-demo/startup/config.js:5:11)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/Demo/node-demo/app.js:6:28)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+      at node:internal/main/run_main_module:17:47,
+  timestamp: '2022-06-22T15:20:11.186Z'
+}
+{
+  level: 'error',
+  message: Error: FATAL ERROR: environment jwtPrivateKey is not defined!
+      at module.exports (/Users/yanqingguo/Desktop/Demo/node-demo/startup/config.js:5:11)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/Demo/node-demo/app.js:6:28)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+      at node:internal/main/run_main_module:17:47,
+  timestamp: '2022-06-22T15:20:49.439Z'
+}
