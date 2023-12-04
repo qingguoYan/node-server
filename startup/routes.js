@@ -4,13 +4,14 @@ const morgan = require("morgan");
 const users = require("../router/users");
 const auth = require("../router/auth");
 const home = require("../router/home");
-const editor = require("../router/editor");
+const post = require("../router/post");
+const client = require("../router/client");
 const error = require("../middleware/error");
 const logger = morgan("tiny");
 
 module.exports = (app) => {
   app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5173");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Headers", "Content-Type,x-auth-token");
     res.header("Access-Control-Expose-Headers", "*");
@@ -24,6 +25,7 @@ module.exports = (app) => {
   app.use("/api/users", users);
   app.use("/api/auth", auth);
   app.use("/api/home", home);
-  app.use("/api/editor", editor);
+  app.use("/api/post", post);
+  app.use("/client/post", client);
   app.use(error);
 };

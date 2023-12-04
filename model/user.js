@@ -4,8 +4,8 @@ const config = require("config");
 const Joi = require("joi");
 
 const scheme = new mongoose.Schema({
-  username: { type: String, required: true, minlength: 5, maxlength: 50 },
-  password: { type: String, required: true, minlength: 5, maxlength: 1024 },
+  username: { type: String, required: true, minlength: 5, maxlength: 30 },
+  password: { type: String, required: true, minlength: 5, maxlength: 30 },
   email: {
     type: String,
     required: true,
@@ -16,7 +16,10 @@ const scheme = new mongoose.Schema({
 });
 
 scheme.methods.generateAuthToken = function () {
-  const token = jwt.sign({ _id: this._id }, config.get("jwtPrivateKey"));
+  const token = jwt.sign(
+    { _id: this._id, username: this.username },
+    config.get("jwtPrivateKey")
+  );
   return token;
 };
 

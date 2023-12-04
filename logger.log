@@ -1,293 +1,223 @@
 {
   level: 'error',
-  message: ReferenceError: success is not defined
-      at D:\demo\node-demo\router\editor.js:9:22
-      at D:\demo\node-demo\middleware\async.js:4:13
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22
-      at Function.process_params (D:\demo\node-demo\node_modules\express\lib\router\index.js:341:12)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\index.js:275:10)
-      at Function.handle (D:\demo\node-demo\node_modules\express\lib\router\index.js:174:3),
-  timestamp: '2022-04-26T10:52:03.103Z'
-}
-{
-  level: 'error',
-  message: ReferenceError: success is not defined
-      at D:\demo\node-demo\router\editor.js:9:22
-      at D:\demo\node-demo\middleware\async.js:4:13
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22
-      at Function.process_params (D:\demo\node-demo\node_modules\express\lib\router\index.js:341:12)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\index.js:275:10)
-      at Function.handle (D:\demo\node-demo\node_modules\express\lib\router\index.js:174:3),
-  timestamp: '2022-04-26T10:52:12.919Z'
-}
-{
-  level: 'error',
-  message: TypeError: Editor is not a constructor
-      at D:\demo\node-demo\router\editor.js:12:20
-      at D:\demo\node-demo\middleware\async.js:4:13
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at module.exports (D:\demo\node-demo\middleware\auth.js:12:5)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22,
-  timestamp: '2022-04-26T11:31:29.069Z'
-}
-{
-  level: 'error',
-  message: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
-      at NativeConnection.Connection.openUri (D:\demo\node-demo\node_modules\mongoose\lib\connection.js:807:32)
-      at D:\demo\node-demo\node_modules\mongoose\lib\index.js:340:10
-      at D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-      at new Promise (<anonymous>)
-      at promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
-      at Mongoose._promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\index.js:1174:10)
-      at Mongoose.connect (D:\demo\node-demo\node_modules\mongoose\lib\index.js:339:20)
-      at module.exports (D:\demo\node-demo\startup\db.js:4:12)
-      at Object.<anonymous> (D:\demo\node-demo\app.js:7:24)
-      at Module._compile (node:internal/modules/cjs/loader:1103:14) {
-    reason: TopologyDescription {
-      type: 'Unknown',
-      servers: Map(1) {
-        'localhost:27017' => ServerDescription {
-          _hostAddress: new HostAddress('localhost:27017'),
-          address: 'localhost:27017',
-          type: 'Unknown',
-          hosts: [],
-          passives: [],
-          arbiters: [],
-          tags: {},
-          minWireVersion: 0,
-          maxWireVersion: 0,
-          roundTripTime: -1,
-          lastUpdateTime: 158900293,
-          lastWriteDate: 0,
-          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
-              at connectionFailureError (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:381:20)
-              at Socket.<anonymous> (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:301:22)
-              at Object.onceWrapper (node:events:646:26)
-              at Socket.emit (node:events:526:28)
-              at emitErrorNT (node:internal/streams/destroy:157:8)
-              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-              at processTicksAndRejections (node:internal/process/task_queues:83:21)
-        }
-      },
-      stale: false,
-      compatible: true,
-      heartbeatFrequencyMS: 10000,
-      localThresholdMS: 15,
-      logicalSessionTimeoutMinutes: undefined
-    }
-  },
-  timestamp: '2022-04-27T16:08:39.054Z'
-}
-{
-  level: 'error',
-  message: MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
-      at NativeConnection.Connection.openUri (D:\demo\node-demo\node_modules\mongoose\lib\connection.js:807:32)
-      at D:\demo\node-demo\node_modules\mongoose\lib\index.js:340:10
-      at D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
-      at new Promise (<anonymous>)
-      at promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
-      at Mongoose._promiseOrCallback (D:\demo\node-demo\node_modules\mongoose\lib\index.js:1174:10)
-      at Mongoose.connect (D:\demo\node-demo\node_modules\mongoose\lib\index.js:339:20)
-      at module.exports (D:\demo\node-demo\startup\db.js:4:12)
-      at Object.<anonymous> (D:\demo\node-demo\app.js:7:24)
-      at Module._compile (node:internal/modules/cjs/loader:1103:14) {
-    reason: TopologyDescription {
-      type: 'Unknown',
-      servers: Map(1) {
-        'localhost:27017' => ServerDescription {
-          _hostAddress: new HostAddress('localhost:27017'),
-          address: 'localhost:27017',
-          type: 'Unknown',
-          hosts: [],
-          passives: [],
-          arbiters: [],
-          tags: {},
-          minWireVersion: 0,
-          maxWireVersion: 0,
-          roundTripTime: -1,
-          lastUpdateTime: 188705404,
-          lastWriteDate: 0,
-          error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
-              at connectionFailureError (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:381:20)
-              at Socket.<anonymous> (D:\demo\node-demo\node_modules\mongodb\lib\cmap\connect.js:301:22)
-              at Object.onceWrapper (node:events:646:26)
-              at Socket.emit (node:events:526:28)
-              at emitErrorNT (node:internal/streams/destroy:157:8)
-              at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-              at processTicksAndRejections (node:internal/process/task_queues:83:21)
-        }
-      },
-      stale: false,
-      compatible: true,
-      heartbeatFrequencyMS: 10000,
-      localThresholdMS: 15,
-      logicalSessionTimeoutMinutes: undefined
-    }
-  },
-  timestamp: '2022-05-03T13:10:59.421Z'
-}
-{
-  level: 'error',
-  message: TypeError: editor.save is not a function
-      at D:\demo\node-demo\router\editor.js:26:18
-      at D:\demo\node-demo\middleware\async.js:4:13
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at module.exports (D:\demo\node-demo\middleware\auth.js:12:5)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at next (D:\demo\node-demo\node_modules\express\lib\router\route.js:137:13)
-      at Route.dispatch (D:\demo\node-demo\node_modules\express\lib\router\route.js:112:3)
-      at Layer.handle [as handle_request] (D:\demo\node-demo\node_modules\express\lib\router\layer.js:95:5)
-      at D:\demo\node-demo\node_modules\express\lib\router\index.js:281:22,
-  timestamp: '2022-05-04T02:19:25.051Z'
-}
-{
-  level: 'error',
-  message: Error: Editor validation failed: title: Path `title` is required.
-      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
-      at formatValue (node:internal/util/inspect:782:19)
-      at formatProperty (node:internal/util/inspect:1819:11)
-      at formatRaw (node:internal/util/inspect:1030:9)
-      at formatValue (node:internal/util/inspect:817:10)
-      at inspect (node:internal/util/inspect:347:10)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
-      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
-      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
-    errors: {
-      title: ValidatorError: Path `title` is required.
-          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
-          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
-          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
-          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
-        properties: {
-          validator: [Function (anonymous)],
-          message: 'Path `title` is required.',
-          type: 'required',
-          path: 'title',
-          value: undefined
-        },
-        kind: 'required',
-        path: 'title',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true
-      }
-    },
-    _message: 'Editor validation failed'
-  },
-  timestamp: '2022-05-04T02:24:14.382Z'
-}
-{
-  level: 'error',
-  message: Error: Editor validation failed: title: Path `title` is required.
-      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
-      at formatValue (node:internal/util/inspect:782:19)
-      at formatProperty (node:internal/util/inspect:1819:11)
-      at formatRaw (node:internal/util/inspect:1030:9)
-      at formatValue (node:internal/util/inspect:817:10)
-      at inspect (node:internal/util/inspect:347:10)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
-      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
-      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
-    errors: {
-      title: ValidatorError: Path `title` is required.
-          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
-          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
-          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
-          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
-        properties: {
-          validator: [Function (anonymous)],
-          message: 'Path `title` is required.',
-          type: 'required',
-          path: 'title',
-          value: undefined
-        },
-        kind: 'required',
-        path: 'title',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true
-      }
-    },
-    _message: 'Editor validation failed'
-  },
-  timestamp: '2022-05-04T02:24:57.900Z'
-}
-{
-  level: 'error',
-  message: Error: Editor validation failed: title: Path `title` is required.
-      at ValidationError.inspect (D:\demo\node-demo\node_modules\mongoose\lib\error\validation.js:48:26)
-      at formatValue (node:internal/util/inspect:782:19)
-      at formatProperty (node:internal/util/inspect:1819:11)
-      at formatRaw (node:internal/util/inspect:1030:9)
-      at formatValue (node:internal/util/inspect:817:10)
-      at inspect (node:internal/util/inspect:347:10)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\pretty-print.js:27:19)
-      at Format.transform (D:\demo\node-demo\node_modules\logform\combine.js:20:24)
-      at DerivedLogger._transform (D:\demo\node-demo\node_modules\winston\lib\winston\logger.js:313:29)
-      at DerivedLogger.Transform._read (D:\demo\node-demo\node_modules\readable-stream\lib\_stream_transform.js:177:10) {
-    errors: {
-      title: ValidatorError: Path `title` is required.
-          at validate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1323:13)
-          at SchemaString.SchemaType.doValidate (D:\demo\node-demo\node_modules\mongoose\lib\schematype.js:1307:7)
-          at D:\demo\node-demo\node_modules\mongoose\lib\document.js:2757:18
-          at processTicksAndRejections (node:internal/process/task_queues:78:11) {
-        properties: {
-          validator: [Function (anonymous)],
-          message: 'Path `title` is required.',
-          type: 'required',
-          path: 'title',
-          value: undefined
-        },
-        kind: 'required',
-        path: 'title',
-        value: undefined,
-        reason: undefined,
-        [Symbol(mongoose:validatorError)]: true
-      }
-    },
-    _message: 'Editor validation failed'
-  },
-  timestamp: '2022-05-04T02:26:28.462Z'
-}
-{
-  level: 'error',
   message: Error: FATAL ERROR: environment jwtPrivateKey is not defined!
-      at module.exports (/Users/yanqingguo/Desktop/Demo/node-demo/startup/config.js:5:11)
-      at Object.<anonymous> (/Users/yanqingguo/Desktop/Demo/node-demo/app.js:6:28)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/startup/config.js:5:11)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/earn-money/node-server/app.js:6:28)
       at Module._compile (node:internal/modules/cjs/loader:1103:14)
       at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
       at Module.load (node:internal/modules/cjs/loader:981:32)
       at Function.Module._load (node:internal/modules/cjs/loader:822:12)
       at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
       at node:internal/main/run_main_module:17:47,
-  timestamp: '2022-06-22T15:20:11.186Z'
+  timestamp: '2023-12-02T07:28:26.359Z'
 }
 {
   level: 'error',
-  message: Error: FATAL ERROR: environment jwtPrivateKey is not defined!
-      at module.exports (/Users/yanqingguo/Desktop/Demo/node-demo/startup/config.js:5:11)
-      at Object.<anonymous> (/Users/yanqingguo/Desktop/Demo/node-demo/app.js:6:28)
-      at Module._compile (node:internal/modules/cjs/loader:1103:14)
+  message: /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:29
+      await Post.findByIdAndUpdate(id, { content, title ,time: create_time: Date.now(),});
+                                                                          ^
+  
+  SyntaxError: Unexpected token ':'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+      at Module._compile (node:internal/modules/cjs/loader:1067:27)
       at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
       at Module.load (node:internal/modules/cjs/loader:981:32)
       at Function.Module._load (node:internal/modules/cjs/loader:822:12)
-      at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
-      at node:internal/main/run_main_module:17:47,
-  timestamp: '2022-06-22T15:20:49.439Z'
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/earn-money/node-server/startup/routes.js:7:14)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14),
+  timestamp: '2023-12-02T13:57:54.662Z'
+}
+{
+  level: 'error',
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'Topology'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'topology' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:1128:12)
+      at ServerResponse.json (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:260:14)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:158:21)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:46:11
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5),
+  timestamp: '2023-12-03T08:32:25.409Z'
+}
+{
+  level: 'error',
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'Topology'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'topology' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:1128:12)
+      at ServerResponse.json (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:260:14)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:158:21)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:47:11
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5),
+  timestamp: '2023-12-03T08:37:19.284Z'
+}
+{
+  level: 'error',
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'Topology'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'topology' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:1128:12)
+      at ServerResponse.json (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:260:14)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:158:21)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:48:11
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5),
+  timestamp: '2023-12-03T08:38:00.333Z'
+}
+{
+  level: 'error',
+  message: TypeError: Converting circular structure to JSON
+      --> starting at object with constructor 'Topology'
+      |     property 's' -> object with constructor 'Object'
+      |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+      --- property 'topology' closes the circle
+      at JSON.stringify (<anonymous>)
+      at stringify (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:1128:12)
+      at ServerResponse.json (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:260:14)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:158:21)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:49:11
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5),
+  timestamp: '2023-12-03T08:40:44.313Z'
+}
+{
+  level: 'error',
+  message: ReferenceError: list is not defined
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:56:19
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at Route.dispatch (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:112:3)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:281:22,
+  timestamp: '2023-12-03T08:45:51.771Z'
+}
+{
+  level: 'error',
+  message: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+      at new NodeError (node:internal/errors:371:5)
+      at ServerResponse.setHeader (node:_http_outgoing:576:11)
+      at ServerResponse.header (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:776:10)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:170:12)
+      at ServerResponse.json (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:267:15)
+      at ServerResponse.send (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/response.js:158:21)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/post.js:52:17
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/mongoose/lib/model.js:4998:18
+      at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+    code: 'ERR_HTTP_HEADERS_SENT'
+  },
+  timestamp: '2023-12-03T08:45:51.789Z'
+}
+{
+  level: 'error',
+  message: TypeError: Router.use() requires a middleware function but got a Object
+      at Function.use (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:464:13)
+      at Function.<anonymous> (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/application.js:220:21)
+      at Array.forEach (<anonymous>)
+      at Function.use (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/application.js:217:7)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/startup/routes.js:29:7)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/earn-money/node-server/app.js:8:28)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12),
+  timestamp: '2023-12-03T13:03:18.560Z'
+}
+{
+  level: 'error',
+  message: ReferenceError: Post is not defined
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:9:18
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at Route.dispatch (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:112:3)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:281:22
+      at Function.process_params (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:341:12)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:275:10)
+      at Function.handle (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:174:3),
+  timestamp: '2023-12-03T13:13:53.879Z'
+}
+{
+  level: 'error',
+  message: ReferenceError: Post is not defined
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:9:18
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at Route.dispatch (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:112:3)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:281:22
+      at Function.process_params (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:341:12)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:275:10)
+      at Function.handle (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:174:3),
+  timestamp: '2023-12-03T13:14:34.466Z'
+}
+{
+  level: 'error',
+  message: /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:10
+      list.map(item=>{title:item.title,desc:item.desc.splic(0,500)})
+                                           ^
+  
+  SyntaxError: Unexpected token ':'
+      at Object.compileFunction (node:vm:352:18)
+      at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+      at Module._compile (node:internal/modules/cjs/loader:1067:27)
+      at Object.Module._extensions..js (node:internal/modules/cjs/loader:1155:10)
+      at Module.load (node:internal/modules/cjs/loader:981:32)
+      at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+      at Module.require (node:internal/modules/cjs/loader:1005:19)
+      at require (node:internal/modules/cjs/helpers:102:18)
+      at Object.<anonymous> (/Users/yanqingguo/Desktop/earn-money/node-server/startup/routes.js:8:16)
+      at Module._compile (node:internal/modules/cjs/loader:1103:14),
+  timestamp: '2023-12-03T13:29:07.404Z'
+}
+{
+  level: 'error',
+  message: TypeError: item.content.splic is not a function
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:12:26
+      at Array.map (<anonymous>)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:10:24
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      at async /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:7,
+  timestamp: '2023-12-03T13:31:51.552Z'
+}
+{
+  level: 'error',
+  message: TypeError: item.content.splice is not a function
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:12:26
+      at Array.map (<anonymous>)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/client.js:10:24
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      at async /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:7,
+  timestamp: '2023-12-03T13:32:39.239Z'
 }

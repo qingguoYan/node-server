@@ -9,12 +9,13 @@ const router = express.Router();
 
 const validate = (user) => {
   const schema = Joi.object({
-    email: Joi.string().min(5).max(255).required().email(),
-    password: Joi.string().min(5).max(255).required(),
+    username: Joi.string().min(5).max(30).required(),
+    password: Joi.string().min(5).max(30).required(),
   });
   return schema.validate(user);
 };
 
+// 登录
 router.post(
   "/",
   asyncMiddleware(async (req, res) => {
@@ -22,25 +23,29 @@ router.post(
     if (error) {
       return res.status(400).send({ error: error.details[0].message });
     }
-    const { email, password } = req.body;
-    let user = await User.findOne({ email });
+    const { username, password } = req.body;
+    let user = await User.findOne({ username });
     if (!user) {
-      return res.status(400).send({ error: "Invalid email or password" });
+      return res.status(400).send({ error: "用户不存在" });
     }
-    const validPassword = await bcrypt.compare(password, user.password);
-    if (!validPassword) {
-      return res.status(400).send({ error: "Invalid email or password" });
+    const isValidPassword = await bcrypt.compare(password, user.password);
+    if (!isValidPassword) {
+      return res.status(400).send({ error: "密码错误" });
     }
     const token = user.generateAuthToken();
-    return res.cookie("x-auth-token", token).end();
+    return res
+      .cookie("x-auth-token", token, { httpOnly: true })
+      .send({ data: true })
+      .end();
   })
 );
 
+// 退出
 router.get(
   "/logout",
   auth,
   asyncMiddleware(async (req, res) => {
-    return res.clearCookie("x-auth-token").end();
+    return res.clearCookie("x-auth-token").send({ data: true }).end();
   })
 );
 

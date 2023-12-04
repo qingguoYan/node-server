@@ -4,5 +4,5 @@ module.exports = (error, req, res, next) => {
     level: "error",
     message: error,
   });
-  res.status(500).send(error);
+  res.status(500).send({ error: JSON.stringify(error) });
 };

@@ -1,10 +1,10 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
-const _ = require("lodash");
 const { User, validate } = require("../model/user");
 const asyncMiddleware = require("../middleware/async");
 const router = express.Router();
 
+// 注册用户
 router.post(
   "/",
   asyncMiddleware(async (req, res) => {
@@ -22,7 +22,7 @@ router.post(
     user = new User({ email, username, password: hashed });
     await user.save();
     const token = user.generateAuthToken();
-    return res.cookie("x-auth-token", token).end();
+    return res.cookie("x-auth-token", token).send({ data: true }).end();
   })
 );
 
