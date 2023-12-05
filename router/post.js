@@ -26,7 +26,6 @@ router.put(
   "/update",
   auth,
   asyncMiddleware(async (req, res) => {
-    console.log(req.body);
     const { id, content, title, desc } = req.body;
     await Post.findByIdAndUpdate(id, {
       content,

@@ -221,3 +221,115 @@
       at async /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:7,
   timestamp: '2023-12-03T13:32:39.239Z'
 }
+{
+  level: 'error',
+  message: TypeError: Cannot read properties of undefined (reading 'path')
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/upload.js:26:63
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at multerMiddleware (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/multer/lib/make-middleware.js:13:41)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13),
+  timestamp: '2023-12-05T14:27:22.424Z'
+}
+{
+  level: 'error',
+  message: TypeError: Cannot read properties of undefined (reading 'path')
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/upload.js:27:63
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at multerMiddleware (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/multer/lib/make-middleware.js:13:41)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13),
+  timestamp: '2023-12-05T14:33:51.452Z'
+}
+{
+  level: 'error',
+  message: TypeError: Cannot read properties of undefined (reading 'path')
+      at /Users/yanqingguo/Desktop/earn-money/node-server/router/upload.js:28:63
+      at /Users/yanqingguo/Desktop/earn-money/node-server/middleware/async.js:4:13
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at multerMiddleware (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/multer/lib/make-middleware.js:13:41)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13),
+  timestamp: '2023-12-05T14:41:20.379Z'
+}
+{
+  level: 'error',
+  message: Error: Multipart: Boundary not found
+      at new Multipart (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/types/multipart.js:233:13)
+      at getInstance (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/index.js:33:12)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/index.js:56:10)
+      at multerMiddleware (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/multer/lib/make-middleware.js:28:16)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at Route.dispatch (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:112:3),
+  timestamp: '2023-12-05T14:44:53.458Z'
+}
+{
+  level: 'error',
+  message: Error: Multipart: Boundary not found
+      at new Multipart (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/types/multipart.js:233:13)
+      at getInstance (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/index.js:33:12)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/busboy/lib/index.js:56:10)
+      at multerMiddleware (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/multer/lib/make-middleware.js:28:16)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at module.exports (/Users/yanqingguo/Desktop/earn-money/node-server/middleware/auth.js:12:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:137:13)
+      at Route.dispatch (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/route.js:112:3),
+  timestamp: '2023-12-05T14:47:10.702Z'
+}
+{
+  level: 'error',
+  message: TypeError: Cannot read properties of null (reading '1')
+      at /Users/yanqingguo/Desktop/earn-money/node-server/startup/routes.js:30:58
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:323:13)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:284:7
+      at Function.process_params (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:341:12)
+      at next (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:275:10)
+      at logger (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/morgan/index.js:144:5)
+      at Layer.handle [as handle_request] (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/layer.js:95:5)
+      at trim_prefix (/Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:323:13)
+      at /Users/yanqingguo/Desktop/earn-money/node-server/node_modules/express/lib/router/index.js:284:7,
+  timestamp: '2023-12-05T14:52:22.438Z'
+}
+{
+  level: 'error',
+  message: [Error: ENOENT: no such file or directory, open '../uploads/images/1701787977843.jpeg'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '../uploads/images/1701787977843.jpeg',
+    storageErrors: []
+  },
+  timestamp: '2023-12-05T14:52:57.850Z'
+}
+{
+  level: 'error',
+  message: [Error: ENOENT: no such file or directory, open '../upload/images/1701788129372.jpeg'] {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '../upload/images/1701788129372.jpeg',
+    storageErrors: []
+  },
+  timestamp: '2023-12-05T14:55:29.376Z'
+}
